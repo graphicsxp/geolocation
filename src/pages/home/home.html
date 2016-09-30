@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button primary (click)="start()">Start Tracking</button>
+  <button primary (click)="stop()">Stop Tracking</button>
+
+<div *ngIf="myPosition">
+  latitude: {{myPosition.latitude}}
+ longitude: {{myPosition.longitude}}
+ </div>
+</ion-content>
